@@ -25,7 +25,7 @@ xhr.send()
 const APP_URL1 = "http://jsonplaceholder.typicode.com";
 const HTMLResponse = document.querySelector(`#app1`)
 
-fetch(`${APP_URL}/users`)
+fetch(`${APP_URL1}/users`)
 .then((response)=> response.json())
 .then((users) => {
     const tpl = users.map((user) => `<li>${user.name} / ${user.email}<li>`)
